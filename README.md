@@ -1,5 +1,5 @@
 # Renter
-Bicycle booking application
+Bicycle renting application
 
 In this JAVA-based Android application,
 students and staff can rent a bicycle from the college
