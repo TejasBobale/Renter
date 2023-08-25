@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "40413123300",
+    "project_id": "renter-8268",
+    "storage_bucket": "renter-8268.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40413123300:android:b189f8d0cdd7715803d2f1",
+        "android_client_info": {
+          "package_name": "com.Bicycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40413123300-ge3d7bc4ilrjrkrhl2st21d5qokoctav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk32kf1Vbr_je7Zg3O61eB5FZNs4WyiNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40413123300-ge3d7bc4ilrjrkrhl2st21d5qokoctav.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40413123300:android:892c15ff3fc7efa203d2f1",
+        "android_client_info": {
+          "package_name": "com.newapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40413123300-ge3d7bc4ilrjrkrhl2st21d5qokoctav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk32kf1Vbr_je7Zg3O61eB5FZNs4WyiNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40413123300-ge3d7bc4ilrjrkrhl2st21d5qokoctav.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40413123300:android:f112c82a5ce310e603d2f1",
+        "android_client_info": {
+          "package_name": "com.renter.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40413123300-ge3d7bc4ilrjrkrhl2st21d5qokoctav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk32kf1Vbr_je7Zg3O61eB5FZNs4WyiNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40413123300-ge3d7bc4ilrjrkrhl2st21d5qokoctav.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
