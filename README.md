@@ -10,3 +10,5 @@ update their profile, and check their history. In the
 android part, the front end involves XML, and the back
 end involves Android Java and Firebase. The IDE used is
 Android Studio 
+<br>
+https://www.irjet.net/archives/V10/i5/IRJET-V10I5157.pdf
