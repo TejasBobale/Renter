@@ -53,421 +53,140 @@ public class Book extends AppCompatActivity {
 
         showAllUserData();
 
-
         Bike1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle1");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            String nameFromDB = snapshot.child("Bicycle1").child("name1").getValue(String.class);
-                            String usernameFromDB = snapshot.child("Bicycle1").child("username").getValue(String.class);
-                            String detailFromDB = snapshot.child("Bicycle1").child("details").getValue(String.class);
-                            String priceFromDB = snapshot.child("Bicycle1").child("price1").getValue(String.class);
-
-                            Intent intent = new Intent(getApplicationContext(), Description.class);
-
-                            intent.putExtra("name", nameFromDB);
-                            intent.putExtra("username", usernameFromDB);
-                            intent.putExtra("details", detailFromDB);
-                            intent.putExtra("price", priceFromDB);
-
-                            startActivity(intent);
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Bike("Bicycle1", "name1", "price1");
             }
         });
         Bike2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle2");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            String nameFromDB = snapshot.child("Bicycle2").child("name2").getValue(String.class);
-                            String usernameFromDB = snapshot.child("Bicycle2").child("username").getValue(String.class);
-                            String detailFromDB = snapshot.child("Bicycle2").child("details").getValue(String.class);
-                            String priceFromDB = snapshot.child("Bicycle2").child("price2").getValue(String.class);
-
-                            Intent intent = new Intent(getApplicationContext(), Description.class);
-
-                            intent.putExtra("name", nameFromDB);
-                            intent.putExtra("username", usernameFromDB);
-                            intent.putExtra("details", detailFromDB);
-                            intent.putExtra("price", priceFromDB);
-
-                            startActivity(intent);
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Bike("Bicycle2", "name2", "price2");
             }
         });
         Bike3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle3");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            String nameFromDB = snapshot.child("Bicycle3").child("name3").getValue(String.class);
-                            String usernameFromDB = snapshot.child("Bicycle3").child("username").getValue(String.class);
-                            String detailFromDB = snapshot.child("Bicycle3").child("details").getValue(String.class);
-                            String priceFromDB = snapshot.child("Bicycle3").child("price3").getValue(String.class);
-
-                            Intent intent = new Intent(getApplicationContext(), Description.class);
-
-                            intent.putExtra("name", nameFromDB);
-                            intent.putExtra("username", usernameFromDB);
-                            intent.putExtra("details", detailFromDB);
-                            intent.putExtra("price", priceFromDB);
-
-                            startActivity(intent);
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Bike("Bicycle3", "name3", "price3");
             }
         });
         Bike4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle4");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            String nameFromDB = snapshot.child("Bicycle4").child("name4").getValue(String.class);
-                            String usernameFromDB = snapshot.child("Bicycle4").child("username").getValue(String.class);
-                            String detailFromDB = snapshot.child("Bicycle4").child("details").getValue(String.class);
-                            String priceFromDB = snapshot.child("Bicycle4").child("price4").getValue(String.class);
-
-                            Intent intent = new Intent(getApplicationContext(), Description.class);
-
-                            intent.putExtra("name", nameFromDB);
-                            intent.putExtra("username", usernameFromDB);
-                            intent.putExtra("details", detailFromDB);
-                            intent.putExtra("price", priceFromDB);
-
-                            startActivity(intent);
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Bike("Bicycle4", "name4", "price4");
             }
         });
         Bike5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle5");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            String nameFromDB = snapshot.child("Bicycle5").child("name5").getValue(String.class);
-                            String usernameFromDB = snapshot.child("Bicycle5").child("username").getValue(String.class);
-                            String detailFromDB = snapshot.child("Bicycle5").child("details").getValue(String.class);
-                            String priceFromDB = snapshot.child("Bicycle5").child("price5").getValue(String.class);
-
-                            Intent intent = new Intent(getApplicationContext(), Description.class);
-
-                            intent.putExtra("name", nameFromDB);
-                            intent.putExtra("username", usernameFromDB);
-                            intent.putExtra("details", detailFromDB);
-                            intent.putExtra("price", priceFromDB);
-
-                            startActivity(intent);
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Bike("Bicycle5", "name5", "price5");
             }
         });
 
         Book1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle1");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            int use = snapshot.child("Bicycle1").child("use").getValue(Integer.class);
-
-                            if (use == 0) {
-
-                                String nameFromDB = snapshot.child("Bicycle1").child("name1").getValue(String.class);
-                                String priceFromDB = snapshot.child("Bicycle1").child("price1").getValue(String.class);
-                                String usernameFromDB = snapshot.child("Bicycle1").child("username").getValue(String.class);
-
-                                Intent intent = new Intent(getApplicationContext(), Booking.class);
-
-                                intent.putExtra("name", nameFromDB);
-                                intent.putExtra("price", priceFromDB);
-                                intent.putExtra("username", usernameFromDB);
-
-                                startActivity(intent);
-
-                            } else {
-
-                                startActivity(new Intent(getApplicationContext(), Bike_in_use.class));
-
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Book("Bicycle1", "name1", "price1");
             }
         });
         Book2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle2");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            int use = snapshot.child("Bicycle2").child("use").getValue(Integer.class);
-
-                            if (use == 0) {
-
-                                String nameFromDB = snapshot.child("Bicycle2").child("name2").getValue(String.class);
-                                String priceFromDB = snapshot.child("Bicycle2").child("price2").getValue(String.class);
-                                String usernameFromDB = snapshot.child("Bicycle2").child("username").getValue(String.class);
-
-                                Intent intent = new Intent(getApplicationContext(), Booking.class);
-
-                                intent.putExtra("name", nameFromDB);
-                                intent.putExtra("price", priceFromDB);
-                                intent.putExtra("username", usernameFromDB);
-
-                                startActivity(intent);
-
-                            } else {
-
-                                startActivity(new Intent(getApplicationContext(), Bike_in_use.class));
-
-                            }
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Book("Bicycle2", "name2", "price2");
             }
         });
         Book3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle3");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            int use = snapshot.child("Bicycle3").child("use").getValue(Integer.class);
-
-                            if (use == 0) {
-
-                                String nameFromDB = snapshot.child("Bicycle3").child("name3").getValue(String.class);
-                                String priceFromDB = snapshot.child("Bicycle3").child("price3").getValue(String.class);
-                                String usernameFromDB = snapshot.child("Bicycle3").child("username").getValue(String.class);
-
-                                Intent intent = new Intent(getApplicationContext(), Booking.class);
-
-                                intent.putExtra("name", nameFromDB);
-                                intent.putExtra("price", priceFromDB);
-                                intent.putExtra("username", usernameFromDB);
-
-                                startActivity(intent);
-
-                            } else {
-
-                                startActivity(new Intent(getApplicationContext(), Bike_in_use.class));
-
-                            }
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Book("Bicycle3", "name3", "price3");
             }
         });
         Book4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle4");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            int use = snapshot.child("Bicycle4").child("use").getValue(Integer.class);
-
-                            if (use == 0) {
-
-                                String nameFromDB = snapshot.child("Bicycle4").child("name4").getValue(String.class);
-                                String priceFromDB = snapshot.child("Bicycle4").child("price4").getValue(String.class);
-                                String usernameFromDB = snapshot.child("Bicycle4").child("username").getValue(String.class);
-
-                                Intent intent = new Intent(getApplicationContext(), Booking.class);
-
-                                intent.putExtra("name", nameFromDB);
-                                intent.putExtra("price", priceFromDB);
-                                intent.putExtra("username", usernameFromDB);
-
-                                startActivity(intent);
-
-                            } else {
-
-                                startActivity(new Intent(getApplicationContext(), Bike_in_use.class));
-
-                            }
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Book("Bicycle4", "name4", "price4");
             }
         });
         Book5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
-                Query checkUser = reference.orderByChild("username").equalTo("Bicycle5");
-
-                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if (snapshot.exists()) {
-
-                            int use = snapshot.child("Bicycle5").child("use").getValue(Integer.class);
-
-                            if (use == 0) {
-
-                                String nameFromDB = snapshot.child("Bicycle5").child("name5").getValue(String.class);
-                                String priceFromDB = snapshot.child("Bicycle5").child("price5").getValue(String.class);
-                                String usernameFromDB = snapshot.child("Bicycle5").child("username").getValue(String.class);
-
-                                Intent intent = new Intent(getApplicationContext(), Booking.class);
-
-                                intent.putExtra("name", nameFromDB);
-                                intent.putExtra("price", priceFromDB);
-                                intent.putExtra("username", usernameFromDB);
-
-                                startActivity(intent);
-
-                            } else {
-
-                                startActivity(new Intent(getApplicationContext(), Bike_in_use.class));
-
-                            }
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Book("Bicycle5", "name5", "price5");
             }
         });
-
-
     }
 
+    public  void Book(String Bicycle, String name, String price) {
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
+        Query checkUser = reference.orderByChild("username").equalTo(Bicycle);
+
+        checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                if (snapshot.exists()) {
+
+                    int use = snapshot.child(Bicycle).child("use").getValue(Integer.class);
+
+                    if (use == 0) {
+
+                        String nameFromDB = snapshot.child(Bicycle).child(name).getValue(String.class);
+                        String priceFromDB = snapshot.child(Bicycle).child(price).getValue(String.class);
+                        String usernameFromDB = snapshot.child(Bicycle).child("username").getValue(String.class);
+
+                        Intent intent = new Intent(getApplicationContext(), Booking.class);
+
+                        intent.putExtra("name", nameFromDB);
+                        intent.putExtra("price", priceFromDB);
+                        intent.putExtra("username", usernameFromDB);
+
+                        startActivity(intent);
+
+                    } else {
+
+                        startActivity(new Intent(getApplicationContext(), Bike_in_use.class));
+
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+    public void Bike(String Bicycle, String name, String price){
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("App/Admin/Bicycle");
+        Query checkUser = reference.orderByChild("username").equalTo(Bicycle);
+
+        checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                if (snapshot.exists()) {
+
+                    String nameFromDB = snapshot.child(Bicycle).child(name).getValue(String.class);
+                    String usernameFromDB = snapshot.child(Bicycle).child("username").getValue(String.class);
+                    String detailFromDB = snapshot.child(Bicycle).child("details").getValue(String.class);
+                    String priceFromDB = snapshot.child(Bicycle).child(price).getValue(String.class);
+
+                    Intent intent = new Intent(getApplicationContext(), Description.class);
+
+                    intent.putExtra("name", nameFromDB);
+                    intent.putExtra("username", usernameFromDB);
+                    intent.putExtra("details", detailFromDB);
+                    intent.putExtra("price", priceFromDB);
+
+                    startActivity(intent);
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
     private void showAllUserData() {
 
         Intent intent = getIntent();

@@ -77,7 +77,7 @@ public class Register extends AppCompatActivity {
         });
 
     }
-
+ 
     private Boolean validateName() {
 
         String val = inputFullname.getEditText().getText().toString();
